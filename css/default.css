@@ -1,0 +1,135 @@
+a,
+a:focus,
+a:active,
+a:hover,
+,
+.testimoni-author {
+    ;
+    color: #fff;
+}
+
+.feature-list li i {
+    #021546 */
+}
+
+.feature-list li i.whyAahana {}
+
+.form-control:focus,
+input.subscribe:focus,
+ul.listForm .form-control:focus,
+#prev4:hover,
+#next4:hover,
+.navbar-default .navbar-toggle:hover {
+    border-color: #999;
+}
+
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary,
+.social-link:hover,
+#prev4:hover,
+#next4:hover,
+#prev45:hover,
+#next45:hover,
+.subscribe-button,
+.contact-wrapper,
+div.pp_default .pp_close:hover,
+div.pp_default .pp_expand:hover,
+div.pp_default .pp_contract:hover,
+#toTop,
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #337CD0;
+}
+
+.whitebg {
+    background-color: #3ACBE8;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover,
+.subscribe-button:hover,
+#toTopHover {
+    background-color: #3ACBE8;
+    color: #fff !important;
+}
+
+#current-office {
+    background: url(../img/section-bg-imgs/current-office.jpg) no-repeat bottom center fixed;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+#current-office h3 {
+    text-align: center;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    background: url(../img/v-white-line.png) no-repeat bottom center;
+}
+
+#about {
+    background: url(../img/section-bg-imgs/tigerSafari2.jpg) no-repeat bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+#sky {
+    background-image: url(../img/section-bg-imgs/section2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #000 !important;
+}
+
+#sky .half-box-left p {}
+
+#location {
+    background-image: url(../img/section-bg-imgs/location.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.servesic {
+    background-image: url(../img/section-bg-imgs/servesic.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media (max-width:767px) {
+
+    .navbar-nav li a:hover,
+    .navbar-default .navbar-nav li.active a:hover,
+    .navbar-default .navbar-nav li.active a:focus,
+    .navbar-default .navbar-nav li.active a:active,
+    .navbar-default .navbar-nav li a.selected,
+    .navbar-default .navbar-nav li a.selected:hover,
+    .navbar-default .navbar-nav li a.selected:focus,
+    .navbar-default .navbar-nav li a.selected:active,
+    .navbar-default .navbar-nav li.dropdown a.dropdown-toggle:focus,
+    .navbar-default .navbar-nav li.dropdown a.dropdown-toggle:active {
+        background-color: #337CD0;
+        /* border-color: #900; */
+    }
+}
+
+#offcialLine {
+    color: #000;
+    text-align: center;
+    background: #F1F2F1;
+    padding: 1% 0;
+}
+
+.officialContent {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.officialContent a {
+    font-size: 15px;
+    font-style: italic;
+    color: #000;
+    text-decoration: none;
+}

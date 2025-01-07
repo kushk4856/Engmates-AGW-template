@@ -1,0 +1,242 @@
+* html #page {
+    height: 100%;
+}
+
+#page {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: -83px;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.7);
+    border-right: solid 1px #EBE7E7;
+    border-left: solid 1px #EBE7E7;
+    min-height: 100%;
+}
+
+#pluginName {
+    float: right;
+    margin-right: 10px;
+    margin-top: 40px;
+    color: #E44C26;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#pageContent {
+    position: absolute;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 1000px;
+    overflow: hidden;
+}
+
+.pageListItem {
+    position: absolute;
+    width: 1000px;
+}
+
+#headerContainer {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#log {
+    background-color: #FFFFFF;
+    height: 100px;
+    width: 100px;
+}
+
+#websiteLink {
+    color: #EF5F22;
+}
+
+#pluginDetails {
+    margin-top: 50px;
+}
+
+#imgContainer {
+    width: 100%;
+    height: 500px;
+}
+
+#positionButtonDiv {
+    background: rgb(58, 56, 63);
+    background: rgba(58, 56, 63, 0.8);
+    border: solid 1px #100000;
+    color: #FFFFFF;
+    padding: 8px;
+    text-align: left;
+    position: absolute;
+    right: 55px;
+    top: 190px;
+}
+
+#positionButtonDiv .positionButtonSpan img {
+    float: right;
+    border: 0;
+}
+
+.positionMapClass area {
+    cursor: pointer;
+}
+
+.zoomButton-plus {
+    background-image: url("assets/zoom-buttons.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 23px;
+    width: 27px;
+}
+
+.zoomButton-minus {
+    background-image: url("assets/zoom-buttons.png");
+    background-position: -27px 0;
+    background-repeat: no-repeat;
+    border: 0 none;
+    cursor: pointer;
+    display: inline-block;
+    height: 23px;
+    width: 27px;
+}
+
+.zoomableContainer {
+
+    //background-image:url("assets/transparent.png");}
+    @media (min-width:640px) and (max-width:767px) {
+        .navbar-brand {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            width: 45%;
+            min-height: 70px;
+            max-height: 70px;
+        }
+
+        .navbar {
+            min-height: 70px;
+        }
+
+        #ouibounce-modal {
+            display: none !important;
+        }
+    }
+
+    @media (min-width:481px) and (max-width:639px) {
+        .navbar-brand {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            width: 45%;
+            min-height: 70px;
+            max-height: 70px;
+        }
+
+        .navbar {
+            min-height: 70px;
+        }
+
+        #ouibounce-modal {
+            display: none !important;
+        }
+    }
+
+    @media (max-width:480px) {
+        .home-contain {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .home-box {
+            width: 100%;
+        }
+
+        .home-contain h2 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .home-contain h3 {
+            font-size: 27px;
+        }
+
+        .home-form h3 {
+            font-size: 18px;
+        }
+
+        #ouibounce-modal {
+            display: none !important;
+        }
+
+        .navbar-brand {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            width: 45%;
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        .navbar {
+            min-height: 60px;
+        }
+    }
+
+    @media (min-width:361px) and (max-width:479px) {
+        .navbar-brand {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            width: 45%;
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        .navbar {
+            min-height: 60px;
+        }
+    }
+
+    @media (min-width:320px) and (max-width:360px) {
+        .home-contain {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .home-box {
+            width: 100%;
+        }
+
+        .home-contain h2 {
+            font-size: 30px;
+            line-height: 35px;
+        }
+
+        .home-contain h3 {
+            font-size: 25px;
+        }
+
+        .home-form h3 {
+            font-size: 18px;
+        }
+
+        #ouibounce-modal {
+            display: none !important;
+        }
+
+        .navbar-brand {
+            margin-bottom: 10px;
+            padding-left: 10px;
+            width: 60%;
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        .navbar {
+            min-height: 70px;
+        }
+    }

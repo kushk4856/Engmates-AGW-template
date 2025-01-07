@@ -1,0 +1,91 @@
+<ifModule mod_headers.c>
+<FilesMatch ".(gif|jpg|jpeg|png|ico|swf|eot|woff|ttf|svg|flv)$">
+Header set Cache-Control "max-age=31536000"
+</FilesMatch>
+<FilesMatch ".(js|css|pdf|txt|xml)$">
+Header set Cache-Control "max-age=31536000"
+</FilesMatch>
+<FilesMatch ".(php|html|htm)$">
+Header set Cache-Control "max-age=31536000"
+</FilesMatch>
+</ifModule>
+<ifModule mod_headers.c>
+Header set Connection keep-alive
+Header unset ETag
+FileETag MTime Size
+</ifModule>
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType /css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+ExpiresDefault "access plus 2 days"
+</IfModule>
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive on
+ExpiresByType text/html "access plus 14 days"
+ExpiresByType text/css "access plus 14 days"
+ExpiresByType text/javascript "access plus 14 days"
+ExpiresByType text/xml "access plus 0 seconds"
+ExpiresByType image/ico "access plus 14 days"
+ExpiresByType image/jpg "access plus 14 days"
+ExpiresByType image/jpeg "access plus 14 days"
+ExpiresByType image/gif "access plus 14 days"
+ExpiresByType image/png "access plus 14 days"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType audio/ogg "access plus 1 month"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType video/mp4  "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+ExpiresByType application/x-javascript "access plus 14 days"
+ExpiresByType application/x-font-woff  "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ExpiresByType application/xml  "access plus 0 seconds"
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/rss+xml   "access plus 1 hour"
+ExpiresByType application/atom+xml  "access plus 1 hour"
+</IfModule>
+<IfModule mod_deflate.c>
+  # Compress HTML, CSS, JavaScript, Text, XML and fonts
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE application/x-font
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-truetype
+  AddOutputFilterByType DEFLATE application/x-font-ttf
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE font/opentype
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/xml
+
+  # Remove browser bugs (only needed for really old browsers)
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  Header append Vary User-Agent
+</IfModule>
+
+#Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^http://aihp.in/fully-furnished-offices-gurgaon/ [NC]
+RewriteRule ^(.*)$ http://www.aihp.in/fully-furnished-offices-gurgaon/$1 [L,R=301,NC]
