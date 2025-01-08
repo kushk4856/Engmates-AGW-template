@@ -257,7 +257,7 @@ body {
         .navbar-default .navbar-toggle,
         .navbar-default .navbar-toggle:focus {
             background: none;
-            border: 2px solid #337cd0;
+            border: 2px solid #C62655;
             border-radius: 2px;
             padding: 10px;
             margin: 15px 0 0 0;
@@ -271,7 +271,7 @@ body {
         .navbar-default .navbar-toggle:focus .icon-bar {
             background-color:
                 /*#8f959e*/
-                #337cd0
+                #C62655
         }
 
         .pagination {

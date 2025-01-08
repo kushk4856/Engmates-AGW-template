@@ -107,10 +107,7 @@ div.pp_default .pp_contract:hover,
     .navbar-default .navbar-nav li a.selected:focus,
     .navbar-default .navbar-nav li a.selected:active,
     .navbar-default .navbar-nav li.dropdown a.dropdown-toggle:focus,
-    .navbar-default .navbar-nav li.dropdown a.dropdown-toggle:active {
-        background-color: #337CD0;
-        /* border-color: #900; */
-    }
+
 }
 
 #offcialLine {
