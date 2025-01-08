@@ -74,13 +74,13 @@ div.pp_default .pp_contract:hover,
     background-position: bottom center;
 }
 
-#sky {
+/* #sky {
     background-image: url(../img/section-bg-imgs/section2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     color: #000 !important;
-}
+} */
 
 #sky .half-box-left p {}
 
