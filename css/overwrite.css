@@ -513,19 +513,19 @@ body {
         }
 
         .form-control:-moz-placeholder {
-            color: #0B236F;
+            color: #C62655;
         }
 
         .form-control::-moz-placeholder {
-            color: #0B236F;
+            color: #C62655;
         }
 
         .form-control:-ms-input-placeholder {
-            color: #0B236F;
+            color: #C62655;
         }
 
         .form-control::-webkit-input-placeholder {
-            color: #0B236F;
+            color: #C62655;
         }
 
         .form-control-2:-moz-placeholder {
@@ -551,9 +551,9 @@ body {
             min-height: 40px;
             font-size: 14px;
             line-height: 1.428571429;
-            color: #0B236F;
+            color: #C62655;
             background-color: none;
-            border: 1px solid #0B236F; //border-radius:40px;background:none;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:none;transition:none;}
+            border: 1px solid #C62655; //border-radius:40px;background:none;-webkit-box-shadow:none;box-shadow:none;-webkit-transition:none;transition:none;}
 
 
 

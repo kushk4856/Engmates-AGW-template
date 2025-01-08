@@ -19,9 +19,13 @@
     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v10/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
 }
 
-.navbar-toggle .icon-bar {
-    background-color: #.navbar-toggle .icon-bar !important;
+body {
+    scroll-behavior: smooth;
 }
+
+/* .navbar-toggle .icon-bar {
+    background-color: #.navbar-toggle .icon-bar !important;
+} */
 
 header {
     position: fixed;
@@ -30,7 +34,7 @@ header {
     padding: 0;
     width: 100%;
     z-index: 10;
-    border-bottom: 2.5px solid #0B236F;
+    border-bottom: 2.5px solid #C62655;
 }
 
 #home {
@@ -745,7 +749,7 @@ header {
         color: #fff;
     }
 
-    #gallery {
+    #courses {
         background: #ffffff;
         padding-top: 26px;
         margin: 0;
@@ -1254,7 +1258,7 @@ header {
         .half-box-left .headline,
         .half-box-left .heading {
             background-image: url("../img/v-white-line.png");
-            background-position: bottom right;
+            background-position: bottom left;
         }
 
         div.loading-invisible {
@@ -1753,7 +1757,7 @@ header {
 
         /* =====cta form section ===  */
 
-        #sky {
+        #why {
             display: flex;
             justify-content: space-between;
             padding-bottom: 30px;
@@ -2243,6 +2247,11 @@ header {
         /* ====custom css by me== */
 
         @media (max-width:767px) {
+            .navbar .container {
+                padding-inline: 8px !important;
+                padding-right: 2px;
+            }
+
             #about {
                 flex-direction: column;
             }
@@ -2255,7 +2264,7 @@ header {
                 text-align: center;
             }
 
-            #sky {
+            #why {
                 flex-direction: column;
             }
 
@@ -2268,6 +2277,7 @@ header {
                 width: 100%;
                 margin-left: 0px;
                 padding-inline: 24px;
+                padding-bottom: 110px;
             }
 
             .col_size_1,
@@ -2286,11 +2296,17 @@ header {
 
             .navbar-brand {
                 margin-bottom: 10px;
-                padding-left: 24px !important;
+                padding-left: 25px !important;
                 width: 65%;
                 min-height: 55px;
                 max-height: 55px;
             }
+
+            .navbar-default .navbar-toggle {
+                margin-right: -4px;
+            }
+
+
 
             .navbar {
                 min-height: 70px;
@@ -2794,7 +2810,7 @@ header {
         margin: 0;
         box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
         border-top: 1px solid #e3e4e3;
-        margin-bottom: -30px;
+        margin-bottom: 30px;
     }
 
     #contact h3 {
@@ -2855,7 +2871,7 @@ header {
         cursor: pointer;
         width: 100%;
         border: none;
-        background: #ed1c24;
+        background: #C62655;
         color: #FFF;
         margin: 0 0 5px;
         padding: 13px 10px;
@@ -2863,7 +2879,7 @@ header {
     }
 
     #contact button[type="submit"]:hover {
-        background: #43A047;
+        background: #C62655;
         -webkit-transition: background .3s ease-in-out;
         -moz-transition: background .3s ease-in-out;
         transition: background-color .3s ease-in-out
@@ -4304,3 +4320,31 @@ header {
 
 
     /* ==================popu calender datepicker css end ======= */
+
+    .custom_undrline,
+    .custom_undrline2 {
+        position: relative;
+        z-index: 2;
+    }
+
+    .custom_undrline::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        height: 3px;
+        left: 0;
+        background-color: #C62655;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .custom_undrline2::after {
+        position: absolute;
+        content: '';
+        bottom: 0px;
+        height: 2px;
+        left: 0;
+        background-color: #C62655;
+        width: 100%;
+        z-index: -1;
+    }
