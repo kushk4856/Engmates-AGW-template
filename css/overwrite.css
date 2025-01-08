@@ -249,9 +249,9 @@ body {
         .navbar-default .navbar-nav .active a:focus,
         .navbar-default .navbar-nav .dropdown.active a:focus {
             background-color: none;
-            border: 1px solid #0B236F !important;
+            border: 1px solid #C62655 !important;
             border-radius: 2px;
-            color: #0B236F !important;
+            color: #C62655 !important;
         }
 
         .navbar-default .navbar-toggle,
@@ -657,7 +657,7 @@ body {
 
                 .btn-primary:hover {
                     color: #903 !important;
-                    border: 1px solid #0B236F;
+                    border: 1px solid #903;
                 }
 
                 .btn-sm {

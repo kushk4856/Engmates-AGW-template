@@ -52,7 +52,7 @@ body {
 }
 
 #ouibounce-modal .modal-title {
-    background-color: #1f4b7b;
+    background-color: #C62655;
 }
 
 .modal {
@@ -108,7 +108,7 @@ body {
 
 #ouibounce-modal .modal-title {
     font-size: 18px;
-    background-color: #0B236F;
+    background-color: #C62655;
     color: #fff;
     padding: 10px;
     margin: 0;
@@ -117,7 +117,7 @@ body {
 }
 
 #ouibounce-modal form input[type="submit"] {
-    background: #0B236F !important;
+    background: #C62655 !important;
 }
 
 #ouibounce-modal h3 {

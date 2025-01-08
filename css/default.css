@@ -20,7 +20,7 @@ ul.listForm .form-control:focus,
 #prev4:hover,
 #next4:hover,
 .navbar-default .navbar-toggle:hover {
-    border-color: #999;
+    border-color: #C62655;
 }
 
 .btn-primary:focus,
@@ -38,19 +38,20 @@ div.pp_default .pp_expand:hover,
 div.pp_default .pp_contract:hover,
 #toTop,
 .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: #337CD0;
+    background-color: #C62655;
 }
 
 .whitebg {
-    background-color: #3ACBE8;
+    background-color: #C62655;
     color: #fff;
     text-transform: uppercase;
+    border: 1px solid #C62655;
 }
 
 .btn-primary:hover,
 .subscribe-button:hover,
 #toTopHover {
-    background-color: #3ACBE8;
+    background-color: #C62655;
     color: #fff !important;
 }
 
@@ -68,10 +69,7 @@ div.pp_default .pp_contract:hover,
 }
 
 #about {
-    background: url(../img/section-bg-imgs/tigerSafari2.jpg) no-repeat bottom center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
+    display: flex;
 }
 
 /* #sky {
