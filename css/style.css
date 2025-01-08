@@ -257,8 +257,10 @@ header {
     width: 50%;
     color: #f1f2f1;
     padding: 60px 60px 60px 60px;
+    /* padding-block: 20px; */
     text-align: right;
     background: #F7EFF1;
+
 }
 
 .award-box {
@@ -376,7 +378,7 @@ header {
     }
 
     .feature-list li p {
-        font-size: 15px;
+        font-size: 17px;
         font-weight: normal !important;
         color: #0A1D3A;
         margin-bottom: 0px;
@@ -1570,7 +1572,7 @@ header {
             }
 
             .feature-list li p {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: normal !important;
                 padding-top: 0px;
             }
@@ -2321,6 +2323,15 @@ header {
                 color: #fff !important;
             }
 
+            .navbar-default .navbar-nav li a.selected:hover {
+                color: #000 !important;
+            }
+
+            .form_wrapper {
+                padding: 6px;
+                padding-bottom: 12px;
+            }
+
             #social-widget {
                 padding-right: 0px;
                 border: 0px;
@@ -2361,6 +2372,10 @@ header {
                 color: #fff !important;
             }
 
+            .navbar-default .navbar-nav .open .dropdown-menu>li>a {
+                color: #fff;
+            }
+
             .navbar-default .navbar-nav li a:hover,
             .navbar-default .navbar-nav li.active a:hover,
             .navbar-default .navbar-nav li.active a:focus,
@@ -2376,9 +2391,7 @@ header {
                 border: 1px solid;
             }
 
-            .navbar-default .navbar-nav .open .dropdown-menu>li>a {
-                color: #fff;
-            }
+
 
             .home-contain h1 {
                 font-size: 18px;
@@ -2937,13 +2950,13 @@ header {
 
 
     .icons {
-        width: 50px;
+        width: 65px;
         float: right;
         margin-left: 20px;
     }
 
     .icons2 {
-        width: 50px;
+        width: 65px;
         float: right;
         margin-left: 20px;
     }
