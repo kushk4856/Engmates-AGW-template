@@ -35,6 +35,181 @@
      </head>
 
      <body>
+           <!-- Calendly POPUP -->
+
+  <div class="popUpCalendly">
+     <div class="popup_cal_scheduler-container">
+       <div class="close_calendly"><img src="./images/cross.webp" alt=""></div>
+       <div class="popup_cal_left-panel">
+         <div class="previous_btn_popup">
+           <img src="./images/up-arrow.webp" alt="" />
+         </div>
+         <div class="popup_cal_logo">
+           <img src="./img/engmates.svg" alt="" width="200" />
+         </div>
+         <div class="meeting_detail">
+           <!-- <div class="popup_cal_company-name">The Group Three</div> -->
+           <div class="popup_cal_meeting-title">Schedule Your Demo</div>
+           <div class="popup_cal_duration time_date_info hide-in-mbl">
+             <img src="./images/clock.webp" alt="" />
+             <div class="time_display">Select a Slot</div>
+           </div>
+           <div class="time_date_info hide-in-mbl">
+             <img src="./images/calendar.webp" alt="" />
+             <div class="popup_cal_selected-date">Friday, December 20</div>
+           </div>
+ 
+           <div class="time_date_info hide-in-mbl" style="padding-left: 1px;">
+             <img src="./images/planet-earth.webp" alt="" />
+             Indian Standard Time
+           </div>
+         </div>
+       </div>
+ 
+       <div class="right_container_modal">
+         <div class="popup_cal_right-panel">
+           <div class="popup_cal_calendar-section">
+ 
+             <div class="">
+               <div class="popup_cal_main-header hide-in-mbl">
+                 <h2>Select a Date & Time</h2>
+               </div>
+ 
+               <div class="cal_time d-flex">
+                 <div class="popup_cal_calendar">
+                   <div class="popup_cal_month-selector">
+                     <button id="popup_cal_prev-month">
+                       <img src="./images/left-arrow.webp" alt="" />
+                     </button>
+                     <div id="popup_cal_current-month">December 2024</div>
+                     <button id="popup_cal_next-month">
+                       <img src="./images/right-arrow.webp" alt="" />
+                     </button>
+                   </div>
+                   <div class="popup_cal_weekdays">
+                     <div>MON</div>
+                     <div>TUE</div>
+                     <div>WED</div>
+                     <div>THU</div>
+                     <div>FRI</div>
+                     <div>SAT</div>
+                     <div>SUN</div>
+                   </div>
+                   <div class="popup_cal_days" id="popup_cal_calendar-days"></div>
+                   <div class="popup_cal_timezone-selector">
+                     <p>Time Zone</p>
+                     <div class="time_option">
+                       <img src="./datePickerImg/globe-earth.webp" alt="" />
+                       <select>
+                         <option>Indian Standard Time</option>
+                       </select>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="right_time_container">
+                   <div class="popup_cal_selected-date">
+                     Friday, December 20
+                   </div>
+                 
+                   <div class="popup_cal_time-slots-section">
+                     <div class="no_slots_div">
+                       <div class="time_img">
+                           <img src="./images/back-in-time.webp" alt="">
+                       </div>
+                       <div class="time_text">
+                           <h4>Oops!</h4>
+                           <p>No Slots are Available <br>
+                             for Today.
+                           </p>
+                        
+                       </div>
+                   </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+ 
+           </div>
+         </div>
+         <!-- ===form== -->
+         <form class="popupForm" action="mail/mail6.php" method="post">
+ 
+           <input type="text" name="selected_date" class="selected_date_Input" hidden style="display: none;">
+           <input type="text" name="selected_time" class="selected_time_Input" hidden style="display: none;">
+           <input type="text" name="selected_card" class="selected_card_Input" hidden style="display: none;">
+ 
+           <div class="">
+             <h2>Enter Details</h2>
+           </div>
+           <div class="form_content">
+             <div class="name_field">
+               <div class="input_field_row">
+                 <!-- <label for="name">Name*</label> -->
+                 <input type="text" placeholder="Name*" name="name" required />
+               </div>
+               <div class="input_field_row">
+                 <!-- <label for="name">Email*</label> -->
+                 <input type="text" placeholder="Email*" name="email" required />
+               </div>
+             </div>
+             <div class="email_field">
+               <div class="input_field_row">
+                 <!-- <label for="name">Phone*</label> -->
+                 <input type="text" placeholder="Phone*" pattern="[6-9][0-9]{9}" name="phone" required />
+               </div>
+               <div class="input_field_row">
+                 <!-- <label for="name">Clinic Name*</label> -->
+                 <input type="text" placeholder="Clinic Name*" name="clinic_name" required />
+               </div>
+               <!-- <div class="add_guest">Add Guest</div> -->
+             </div>
+ 
+             <div class="email_field">
+               <div class="input_field_row">
+                 <!-- <label for="name">City</label> -->
+                 <input type="text" placeholder="City" name="city" />
+               </div>
+               <div class="input_field_row">
+                 <!-- <label for="name">Currently Using Software?</label> -->
+                 <!-- <input type="text" placeholder="Currently Using Software?" name="is_using_software" /> -->
+                 <select class="form-control mb-3" name="is_using_software" required>
+                   <option value="" disabled selected>Currently Using Any Software?</option>
+                   <option value="yes">Yes</option>
+                   <option value="no">No</option>
+                 </select>
+               </div>
+               <!-- <div class="add_guest">Add Guest</div> -->
+             </div>
+             <div class="email_field">
+               <div class="input_field_row">
+                 <!-- <label for="name">Message</label> -->
+                 <!-- <input type="text" placeholder="Write Your Message.." name="message" /> -->
+                 <textarea name="message" rows="4" placeholder="Write Your Message..." id=""></textarea>
+               </div>
+ 
+               <!-- <div class="add_guest">Add Guest</div> -->
+             </div>
+             
+             <!-- <div class="message_field">
+           <label>Please share anything that will help prepare for our
+             meeting.</label>
+           <textarea name="message" rows="2" id=""></textarea>
+         </div> -->
+             <!-- <div class="footer_text">
+           By proceeding, you confirm that you have read and agree to
+           Calendly's Terms of Use and Privacy Notice.
+         </div> -->
+             <button type="submit" name="submit">Schedule Demo</button>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+   <!-- Calendly POPUP -->
+ 
+ 
+
+       
           <div id=wrapper>
                <header>
                     <div class="navbar navbar-default" role=navigation>
@@ -54,7 +229,7 @@
                                         <li><a style="color:#a31e5d" id=GoToPricing href="#about"> Courses</a></li>
                                         <li><a style="color:#a31e5d" id=GoToEarth href="#sky">Why Engmates</a></li>
                                         <li><a style="color:#a31e5d" id=GoToEarth href="#gallery">Contact Us</a></li>
-                                        <li class="call-us-back"> <a style="color:#fff !important; font-weight:bold;"
+                                        <li class="call-us-back "> <a style="color:#fff !important; font-weight:bold;"
                                                   id=GoToArchitect href="#contact">Call For Consultation</a></li>
                                    </ul>
                               </div>
@@ -112,7 +287,7 @@
                                                             <input type="phone" name="alternative_no"
                                                                  onKeyPress="return isNumberKey(event)"
                                                                  class="form-control form-block input-lg"
-                                                                 id="alternative_no" placeholder="Alternative  Number"
+                                                                 id="alternative_no" placeholder="Alternative Number"
                                                                  required />
                                                        </div>
                                                   </div>
@@ -284,7 +459,7 @@
 
                                         <div class="col_size_1">
                                              <div class="tp-cta-3-form-input">
-                                                  <input type="tel" placeholder=" Alternative Number">
+                                                  <input type="tel" placeholder="Alternative Number">
                                              </div>
                                         </div>
 
@@ -352,21 +527,21 @@
                <h3 class="heading-gallery text-center">Courses to Build <br> <span style="color: #C62655;">in-Demand Career Skills</span></h3>
                <div class="list_carousel responsive gallery">
                     <ul id=foo4 class=screenshot>
-                         <li><img src="img/preview-size/basic-english-courses.jpg" class=gallery-img2 alt="agwtrading" width=550
+                         <li><img src="img/preview-size/basic-english-courses.jpg" class="gallery-img2 openModal" alt="agwtrading" width=550
                                    height=550 /></a> </li>
-                         <li><img src="img/preview-size/advance-english-course.jpg" class=gallery-img2 alt="agwtrading"
+                         <li><img src="img/preview-size/advance-english-course.jpg" class="gallery-img2 openModal" alt="agwtrading"
                                    width=550 height=550 /></a> </li>
-                         <li><img src="img/preview-size/interview-preparation-course.jpg" class=gallery-img2 alt="agwtrading" width=550
+                         <li><img src="img/preview-size/interview-preparation-course.jpg" class="gallery-img2 openModal" alt="agwtrading" width=550
                                    height=550 /></a> </li>
-                         <li><img src="img/preview-size/personality-development-course.jpg" class=gallery-img2 alt="agwtrading"
+                         <li><img src="img/preview-size/personality-development-course.jpg" class="gallery-img2 openModal" alt="agwtrading"
                                    width=550 height=550 /></a> </li>
-                         <li> <img src="img/preview-size/professional-english-course.jpg" class=gallery-img2 alt="agwtrading"
+                         <li> <img src="img/preview-size/professional-english-course.jpg" class="gallery-img2 openModal" alt="agwtrading"
                                    width=550 height=550 /> </a> </li>
-                         <li><img src="img/preview-size/public-speaking-course.jpg" class=gallery-img2 alt="agwtrading" width=550
+                         <li><img src="img/preview-size/public-speaking-course.jpg" class="gallery-img2 openModal" alt="agwtrading" width=550
                                    height=550 /></a> </li>
-                         <li><img src="img/preview-size/online-english-course.jpg" class=gallery-img2 alt="agwtrading" width=550
+                         <li><img src="img/preview-size/online-english-course.jpg" class="gallery-img2 openModal" alt="agwtrading" width=550
                                    height=550 /></a> </li>
-                         <li><img src="img/preview-size/english-writing-course.jpg" class=gallery-img2 alt="agwtrading" width=550
+                         <li><img src="img/preview-size/english-writing-course.jpg" class="gallery-img2 openModal" alt="agwtrading" width=550
                                    height=550 /></a> </li>
                          <!-- <li><img src="img/preview-size/img2.jpg" class=gallery-img2 alt="agwtrading" width=550
                                    height=550 /></a> </li>
@@ -1494,7 +1669,7 @@
                                                             <p>
                                                                  If you encounter any accessibility barriers on our
                                                                  website, please contact us at <a
-                                                                      href="#">info@engmates</a>.com. We value your
+                                                                      href="mailto:info@engmates.com">info@engmates.com</a>. We value your
                                                                  feedback and strive to respond promptly and
                                                                  address your concerns.
                                                             </p>
@@ -1740,7 +1915,7 @@
                <div class="underlay"></div>
                <div class="modal">
                     <div class="modal-title">
-                         <h3>GET A CALL BACK FOR SPECIAL OFFER</h3>
+                         <h3>REQUEST A FREE CALL BACK </h3>
                     </div>
                     <div class="modal-body">
                          <form action="mail-phone.php" method="post">
