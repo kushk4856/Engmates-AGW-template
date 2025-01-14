@@ -1,0 +1,6 @@
+[08-Jan-2025 19:02:56 UTC] PHP Parse error:  Unclosed '{' on line 2 in /home/abhishekbakshi/public_html/himanshu/engmates-co-in/mail/mail5.php on line 266
+[08-Jan-2025 19:03:24 UTC] PHP Parse error:  Unclosed '{' on line 2 in /home/abhishekbakshi/public_html/himanshu/engmates-co-in/mail/mail5.php on line 266
+[08-Jan-2025 19:05:59 UTC] PHP Warning:  Undefined variable $clinic_name in /home/abhishekbakshi/public_html/himanshu/engmates-co-in/mail/mail5.php on line 30
+[08-Jan-2025 19:05:59 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/abhishekbakshi/public_html/himanshu/engmates-co-in/mail/mail5.php on line 30
+[08-Jan-2025 19:07:46 UTC] PHP Warning:  Undefined variable $clinic_name in /home/abhishekbakshi/public_html/himanshu/engmates-co-in/mail/mail5.php on line 30
+[08-Jan-2025 19:07:46 UTC] PHP Deprecated:  urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/abhishekbakshi/public_html/himanshu/engmates-co-in/mail/mail5.php on line 30

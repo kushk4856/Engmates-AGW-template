@@ -1765,7 +1765,7 @@ pre code {
 
 @media (min-width:1200px) {
     .container {
-        width: 1326px
+        width: 1210px
     }
 }
 
@@ -4824,6 +4824,16 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     .navbar-static-top {
         border-radius: 0
     }
+}
+
+@media (max-width:768px) {
+    .navbar-brand {
+        height: 50px !important;
+        display: flex !important;
+        justify-content: left !important;
+    }
+    
+    
 }
 
 .navbar-fixed-top,
