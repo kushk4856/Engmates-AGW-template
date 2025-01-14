@@ -248,7 +248,7 @@ header {
 
 .home-form h3 {
     padding-bottom: 0px;
-    border-bottom: 1px solid #fff;
+    /* border-bottom: 1px solid #fff; */
     font-size: 26px;
     font-weight: 800;
     line-height: 1.2em;
